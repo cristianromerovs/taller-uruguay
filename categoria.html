@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR 1 -->
+    <div class="container-fluid navbar1">
+        <div class="container">
+            <div class="nav1-left">
+              <img src="img/logoNav.png" alt="" class="logoNav">
+            </div>
+            <div class="search">
+              <input type="text" placeholder="BUSCA TU PRODUCTO AQUÍ">
+              <button class="lupa"><img src="img/lupa.png" alt=""></button>
+              <div class="btn-cart popup" onclick="myFunction()">
+                <img src="img/carrito.png" alt="" class="carritoNav">
+                <div class="textoCarrito">
+                  CARRO DE COMPRAS
+                </div>
+              </div>
+              <div class="popuptext" id="myPopup">
+                <div class="top-green-pop">
+                  <span>MI CARRO DE COMPRAS</span>
+                </div>
+
+                <div class="item-pop" id="item-carrito-1">
+                  <div class="left-pop">  
+                    <img src="img/itemSmall.png" alt="">
+                  </div>
+                  <div class="right-pop">
+                    <span class="nombre-pop">NOMBRE DEL PRODUCTO</span>
+                    <span class="precio-pop">$170.500</span>
+                    <div class="buttons-pop menos">-</div>
+                    <div class="buttons-pop cantidad-pop"><p>1</p></div>
+                    <div class="buttons-pop mas">+</div>
+                    <div class="trash-icon"><img src="img/trash.png" alt=""></div>
+                  </div>
+                </div>
+                <hr class="hr-pop">
+                <div class="item-pop" id="item-carrito-2">
+                  <div class="left-pop">  
+                    <img src="img/itemSmall.png" alt="">
+                  </div>
+                  <div class="right-pop">
+                    <span class="nombre-pop">NOMBRE DEL PRODUCTO</span>
+                    <span class="precio-pop">$170.500</span>
+                    <div class="buttons-pop menos">-</div>
+                    <div class="buttons-pop cantidad-pop"><p>1</p></div>
+                    <div class="buttons-pop mas">+</div>
+                    <div class="trash-icon"><img src="img/trash.png" alt=""></div>
+                  </div>
+                </div>
+                <hr class="hr-pop">
+                <div class="pago-pop">
+                  <button>IR AL PAGO</button>
+                </div>
+              </div>
+            </div>
+            <script>
+              // When the user clicks on <div>, open the popup
+              function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+              }
+            </script>
+        </div>
+    </div>
+    <!-- NAVBAR 2 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item seleccionado">
+                    <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">EMPRESA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicio.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="categoria.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">CLIENTES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <!-- FILTROS -->
+    <div class="container-fluid filtros">
+        <div class="container">
+            <div class="dropdown categoria">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CATEGORÍA ETECH
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                </div>
+            </div>
+            <hr class="filterHr" style="display: inline-block;">
+
+            <div class="dropdown ordenar">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ORDENAR POR:
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row routeCategory">
+                <span class="etech-route">ETECH</span>
+                <span>></span>
+                <span class="marca-route">MARCA</span>
+                <span>></span>
+                <span class="nombre-route">NOMBRE DE LA MARCA</span>
+            </div>
+            <!-- PRIMERA FILA -->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card producto descuento" id="producto-1">
+                        <div class="cardGreenTop">
+                            <span>15% DCTO</span>
+                        </div>
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <span class="card-old-precio">$75.000</span>
+                            <button>AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card producto descuento" id="producto-2">
+                        <div class="cardGreenTop">
+                            <span>NUEVO</span>
+                        </div>
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-3">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-4">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SEGUNDA FILA -->
+            <div class="row mt-4">
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-5">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-6">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-7">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-8">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TERCERA FILA -->
+            <div class="row mt-4">
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-9">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-10">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-11">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-12">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <button class="no-old-price">AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGUNDA FILA -->
+            <div class="row mt-4">
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-13">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <span class="card-old-precio">$75.000</span>
+                            <button>AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-14">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <span class="card-old-precio">$75.000</span>
+                            <button>AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-15">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <span class="card-old-precio">$75.000</span>
+                            <button>AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card producto normal" id="producto-16">
+                        <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                        <hr class="greenCardHr mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                            <span class="card-marca">MARCA</span>
+                            <span class="card-precio">$50.000</span>
+                            <span class="card-old-precio">$75.000</span>
+                            <button>AGREGAR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLECHAS CAMBIO PAGINA -->
+
+            <div class="row">
+                <div class="prev-next mx-auto">
+                    <button class="left-btn"><img src="img/prev-categoria.png" alt="" class="prev-arrow"> ANTERIOR</button>
+                    <span> | </span>
+                    <button class="right-btn">SIGUIENTE <img src="img/next-categoria.png" alt="" class="next-arrow"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- PRODUCTOS -->
+
+
+    
+
+    <!-- FOOTER -->  
+    <div class="container-fluid footerSmall d-flex align-items-center">
+        <div class="container">
+            <span>© <b>Taller Uruguay 2020.</b> Todos los derechos reservados.</span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

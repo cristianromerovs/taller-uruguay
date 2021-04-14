@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR 1 -->
+    <div class="container-fluid navbar1">
+        <div class="container">
+            <div class="nav1-left">
+              <img src="img/logoNav.png" alt="" class="logoNav">
+            </div>
+            <div class="search">
+              <input type="text" placeholder="BUSCA TU PRODUCTO AQUÍ">
+              <button class="lupa"><img src="img/lupa.png" alt=""></button>
+              <div class="btn-cart popup" onclick="myFunction()">
+                <img src="img/carrito.png" alt="" class="carritoNav">
+                <div class="textoCarrito">
+                  CARRO DE COMPRAS
+                </div>
+              </div>
+              <div class="popuptext" id="myPopup">
+                <div class="top-green-pop">
+                  <span>MI CARRO DE COMPRAS</span>
+                </div>
+
+                <div class="item-pop" id="item-carrito-1">
+                  <div class="left-pop">  
+                    <img src="img/itemSmall.png" alt="">
+                  </div>
+                  <div class="right-pop">
+                    <span class="nombre-pop">NOMBRE DEL PRODUCTO</span>
+                    <span class="precio-pop">$170.500</span>
+                    <div class="buttons-pop menos">-</div>
+                    <div class="buttons-pop cantidad-pop"><p>1</p></div>
+                    <div class="buttons-pop mas">+</div>
+                    <div class="trash-icon"><img src="img/trash.png" alt=""></div>
+                  </div>
+                </div>
+                <hr class="hr-pop">
+                <div class="item-pop" id="item-carrito-2">
+                  <div class="left-pop">  
+                    <img src="img/itemSmall.png" alt="">
+                  </div>
+                  <div class="right-pop">
+                    <span class="nombre-pop">NOMBRE DEL PRODUCTO</span>
+                    <span class="precio-pop">$170.500</span>
+                    <div class="buttons-pop menos">-</div>
+                    <div class="buttons-pop cantidad-pop"><p>1</p></div>
+                    <div class="buttons-pop mas">+</div>
+                    <div class="trash-icon"><img src="img/trash.png" alt=""></div>
+                  </div>
+                </div>
+                <hr class="hr-pop">
+                <div class="pago-pop">
+                  <button>IR AL PAGO</button>
+                </div>
+              </div>
+            </div>
+            <script>
+              // When the user clicks on <div>, open the popup
+              function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+              }
+            </script>
+        </div>
+    </div>
+    <!-- NAVBAR 2 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item seleccionado">
+                    <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">EMPRESA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicio.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="categoria.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">CLIENTES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slider.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <div class="container-fluid">
+      <img src="img/catalog-left-arrow.png" class="left-arrow-catalogo" alt="" id="left-destacados">
+      <img src="img/catalog-right-arrow.png" class="right-arrow-catalogo" alt="" id="right-destacados">
+      <div class="container productos-destacados">
+        <div class="title">
+            <h2>PRODUCTOS DESTACADOS</h2>
+            <hr class="hrGreen">
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card destacado" id="producto-destacado-1">
+                    <div class="cardGreenTop">
+                        <span>15% DCTO</span>
+                    </div>
+                    <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                    <hr class="greenCardHr mx-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                      <span class="card-marca">MARCA</span>
+                      <span class="card-precio">$50.000</span>
+                      <span class="card-old-precio">$75.000</span>
+                      <button>AGREGAR AL CARRO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card destacado" id="producto-destacado-2">
+                    <div class="cardGreenTop">
+                        <span>15% DCTO</span>
+                    </div>
+                    <img src="img/itemSmall.png" class="card-img-top mx-auto" alt="...">
+                    <hr class="greenCardHr mx-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                      <span class="card-marca">MARCA</span>
+                      <span class="card-precio">$50.000</span>
+                      <span class="card-old-precio">$75.000</span>
+                      <button>AGREGAR AL CARRO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm destacado hideDestacado">
+                <div class="card" id="producto-destacado-3">
+                    <img src="img/itemSmall2.png" class="card-img-top mx-auto" alt="..." style="padding-top: 28px;">
+                    <hr class="greenCardHr mx-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                      <span class="card-marca">MARCA</span>
+                      <span class="card-precio">$50.000</span>
+                      <span class="card-old-precio">$75.000</span>
+                      <button>AGREGAR AL CARRO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm destacado hideDestacado">
+                <div class="card" id="producto-destacado-4">
+                    <img src="img/itemSmall2.png" class="card-img-top mx-auto" alt="..." style="padding-top: 28px;">
+                    <hr class="greenCardHr mx-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">NOMBRE DEL PRODUCTO</h5>
+                      <span class="card-marca">MARCA</span>
+                      <span class="card-precio">$50.000</span>
+                      <span class="card-old-precio">$75.000</span>
+                      <button>AGREGAR AL CARRO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NUESTROS SERVICIOS -->
+    <div class="container-fluid nuestros-servicios">
+      <img src="img/catalog-left-arrow.png" class="left-arrow-servicios" alt="" id="left-destacados">
+      <img src="img/catalog-right-arrow.png" class="right-arrow-servicios" alt="" id="right-destacados">
+      <div class="container">
+        <div class="title-white">
+          <h2>NUESTROS SERVICIOS</h2>
+          <hr class="hrWhite">
+        </div>
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-sm card-1 mx-auto">
+              <div class="nuestros-servicios-card card mx-auto">
+                <img src="img/card-item.png" class="card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                  <h2>ASESORIAS DE TALLER</h2>
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa asperiores voluptates iure recusandae repellendus? Asperiores 
+                    repudiandae recusandae ipsam. Ipsum quod voluptas fuga tempore 
+                    totam et doloribus beatae soluta cumque voluptatum.</span>
+                    <button>DETALLES</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm card-2 mx-auto">
+              <div class="nuestros-servicios-card card">
+                <img src="img/card-item2.png" class="card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                  <h2>REPARACIONES</h2>
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa asperiores voluptates iure recusandae repellendus? Asperiores 
+                    repudiandae recusandae ipsam. Ipsum quod voluptas fuga tempore 
+                    totam et doloribus beatae soluta cumque voluptatum.</span>
+                    <button>DETALLES</button>
+                </div>
+              </div>
+            </div>
+              
+            <!-- Card 3 -->
+            <div class="col-sm hideResponsive card-3 mx-auto">
+              <div class="nuestros-servicios-card card ">
+                <img src="img/card-item3.png" class="card-img-top mx-auto" alt="...">
+                <div class="card-body">
+                  <h2>VENTA DE REPUESTOS</h2>
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa asperiores voluptates iure recusandae repellendus? Asperiores 
+                    repudiandae recusandae ipsam. Ipsum quod voluptas fuga tempore 
+                    totam et doloribus beatae soluta cumque voluptatum.</span>
+                    <button>DETALLES</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- NUESTROS CLIENTES -->
+
+    <div class="container-fluid nuestros-clientes" style="padding: 0px;">
+      <div class="container">
+        <div class="title">
+          <h2>NUESTROS CLIENTES</h2>
+          <hr class="hrGreen">
+        </div>
+        <div class="row clientes">
+          <div class="col-sm clientes-long">
+            <img src="img/clientes1.png" alt="">
+            <img src="img/clientes2.png" alt="">
+          </div>
+
+          <div class="col-sm clientes-short">
+            <img src="img/clientes3.png" alt="">
+            <img src="img/clientes4.png" alt="">
+            <img src="img/clientes5.png" alt="" class="clienteHide">
+          </div>
+
+        </div>
+      </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7444524576326!2d-70.6388902842966!3d-33.53402918075007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da639fa47d7f%3A0x5fe0e2f4a22d4c06!2sUruguay%202018%2C%20San%20Ram%C3%B3n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1597178651374!5m2!1ses!2scl" width="1920" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="container contacto">
+      <div class="row">
+        <div class="col-sm contact">
+          <div class="title">
+            <h2>CONTACTO</h2>
+            <hr class="hrGreen">
+          </div>
+
+          <div class="row mail">
+            <img src="img/mail-icon.png" alt="">
+            <hr class="hrVertical">
+            <span class="contacto-txt">CONTACTO@TALLERURUGUAY.CL</span>
+          </div>
+
+          <div class="row phone">
+            <img src="img/phone-icon.png" alt="">
+            <hr class="hrVertical">
+            <span class="contacto-txt">+56 9 9546 7090</span>
+          </div>
+          <div class="row adress">
+            <img src="img/gps-icon.png" alt="">
+            <hr class="hrVertical">
+            <span class="contacto-txt" style="width: 50%;">CALLE URUGUAY 2081, SAN RAMÓN, SANTIAGO.</span>
+          </div>
+        </div>
+        <div class="col-sm form">
+          <span class="over-form-txt">COMPLETE EL SIGUIENTE FORMULARIO A CONTINUACIÓN CON TODOS LOS DATOS NECESARIOS PARA CONTACTARNOS:</span>
+          <form action="" class="formulario-contacto">
+            <input type="text" placeholder="Nombre:">
+            <input type="text" placeholder="Teléfono:">
+            <textarea name="mensaje" id="" placeholder="Mensaje:"></textarea>
+            <input type="submit" value="ENVIAR">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->  
+    <div class="container-fluid footerSmall d-flex align-items-center">
+        <div class="container">
+            <span>© <b>Taller Uruguay 2020.</b> Todos los derechos reservados.</span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
